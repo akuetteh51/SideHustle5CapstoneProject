@@ -26,6 +26,7 @@ class LogIn extends StatelessWidget {
                         style: TextStyle(
                           fontSize: 32,
                           color: Color(0xFF1F319D),
+                          fontFamily: 'Gobold',
                         ),
                       )
                     ],
@@ -38,6 +39,7 @@ class LogIn extends StatelessWidget {
                   "Login to your account",
                   style: TextStyle(
                     fontSize: 16,
+                    fontWeight: FontWeight.bold,
                   ),
                 ),
               ),
@@ -122,35 +124,42 @@ class LogIn extends StatelessWidget {
               Center(
                 child: Row(
                   children: [
-
-                    Container(height: 63,width: 99,
-                        color: Colors.white,
-                        child: Image.asset("assets/images/google.png"),),
-            SizedBox(
-                width: 14,
-            )
-                    ,Container(height: 63,width: 99,
-                        color: Colors.white,
-                        child: Image.asset("assets/images/facebook.png"),),
-
+                    Container(
+                      height: 63,
+                      width: 99,
+                      color: Colors.white,
+                      child: Image.asset("assets/images/google.png"),
+                    ),
                     SizedBox(
                       width: 14,
-                    )
-                    ,Container(height: 63,width: 99,
-                        color: Colors.white,
-                        child: Image.asset("assets/images/twitter.png"),),
-
-
+                    ),
+                    Container(
+                      height: 63,
+                      width: 99,
+                      color: Colors.white,
+                      child: Image.asset("assets/images/facebook.png"),
+                    ),
+                    SizedBox(
+                      width: 14,
+                    ),
+                    Container(
+                      height: 63,
+                      width: 99,
+                      color: Colors.white,
+                      child: Image.asset("assets/images/twitter.png"),
+                    ),
                   ],
                 ),
               ),
-          SizedBox(
-          height: 30,
-        ),
+              SizedBox(
+                height: 30,
+              ),
               Center(
-                child: Row(crossAxisAlignment: CrossAxisAlignment.center,
+                child: Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text("Don’t have an account? "),
+                    Text("Don’t have an account?"),
                     TextButton(
                       onPressed: () {},
                       child: Text(
@@ -158,14 +167,12 @@ class LogIn extends StatelessWidget {
                         style: TextStyle(color: Colors.blue),
                       ),
                     ),
-
                   ],
                 ),
               ),
               SizedBox(
                 height: 30,
               ),
-
             ],
           ),
         ),
