@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:side_hustle_5_capstone_project/screen1.dart';
-//import 'package:side_hustle_5_capstone_project/screen2.dart';
 import 'screen1.dart';
 
 void main() {
