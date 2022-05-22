@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'screen3.dart'; 
 
 class LogIn extends StatelessWidget {
   const LogIn({Key? key}) : super(key: key);
@@ -20,7 +21,7 @@ class LogIn extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     children: [
                       Image.asset("assets/images/logoBlue.png",
-                          height: 122, width: 83),
+                          width: 122, height: 83),
                       Text(
                         "REPAIR HOME",
                         style: TextStyle(
@@ -34,7 +35,7 @@ class LogIn extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 30.0, bottom: 14),
+                padding: const EdgeInsets.only(left: 30.0, bottom: 14, top: 35),
                 child: Text(
                   "Login to your account",
                   style: TextStyle(
@@ -161,7 +162,11 @@ class LogIn extends StatelessWidget {
                   children: [
                     Text("Don’t have an account?"),
                     TextButton(
-                      onPressed: () {},
+                      onPressed: () {
+                        Navigator.push(context,
+                        MaterialPageRoute(builder: (context)=>SignUp()),
+                        );
+                      },
                       child: Text(
                         "Sign up",
                         style: TextStyle(color: Colors.blue),
